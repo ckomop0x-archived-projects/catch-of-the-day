@@ -10,12 +10,12 @@ class App extends Component {
   state = {
     fishes: {},
     order: {}
-  }
+  };
 
   addFish = fish => {
-    const fishes = {...this.state.fishes}
+    const fishes = {...this.state.fishes};
 
-    fishes[`fish${Date.now()}`] = fish
+    fishes[`fish${Date.now()}`] = fish;
     this.setState({fishes})
   };
 

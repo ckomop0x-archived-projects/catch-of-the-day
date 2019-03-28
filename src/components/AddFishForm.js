@@ -16,12 +16,12 @@ class AddFishForm extends Component {
       status: this.statusRef.current.value,
       desc: this.descRef.current.value,
       image: this.imageRef.current.value
-    }
-    console.log("MAKING A FISH 🐟", fish)
+    };
+    console.log("MAKING A FISH 🐟", fish);
 
-    this.props.addFish(fish)
+    this.props.addFish(fish);
     event.currentTarget.reset()
-  }
+  };
 
   render () {
     return (
