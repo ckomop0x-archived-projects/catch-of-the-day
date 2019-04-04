@@ -57,7 +57,7 @@ class App extends Component {
   }
 
   render() {
-    const {fishes} = this.state;
+    const {fishes, order} = this.state;
 
     return (
       <div className="catch-of-the-day">
@@ -69,10 +69,10 @@ class App extends Component {
             ))}
           </ul>
         </div>
-        <Order fishes={this.state.fishes} order={this.state.order}/>
+        <Order fishes={fishes} order={order}/>
         <Inventory addFish={this.addFish}
                    loadSampleFishes={this.loadSampleFishes}
-                   fishes={this.state.fishes}/>
+                   fishes={fishes}/>
       </div>
     )
   }
